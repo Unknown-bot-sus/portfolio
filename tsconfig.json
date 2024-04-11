@@ -19,7 +19,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/constants/*": ["./constants/*"],
+      "@/constants/*": ["./lib/constants/*"],
       "@/images/*": ["./public/*"]
     }
   },
