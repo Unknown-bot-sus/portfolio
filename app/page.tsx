@@ -3,6 +3,7 @@ import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
 import { Education } from "@/components/sections/education";
 import { Experiences } from "@/components/sections/experiences";
+import { Footer } from "@/components/sections/footer";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
 import { experiences } from "@/lib/constants";
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects />
       <Education />
       <Contact />
+      <Footer />
     </main>
   );
 }
