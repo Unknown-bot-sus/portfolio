@@ -32,3 +32,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .hero-head-text  {
+    @apply font-black text-white lg:text-7xl lg:leading-5 md:text-5xl sm:text-3xl text-xl  mt-10;
+  }
+}
