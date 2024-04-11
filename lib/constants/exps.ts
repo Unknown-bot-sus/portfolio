@@ -19,7 +19,6 @@ export interface IExperience {
   locationType: LocationType;
   startDate: Date;
   endDate?: Date;
-  currentlyWorking: boolean;
   description: string[];
   pic?: StaticImageData | string;
 }
@@ -33,9 +32,8 @@ export const experiences: IExperience[] = [
     company: "D3-SG Pte Ltd",
     location: "Sg",
     pic: starbucks,
-    startDate: new Date("01-05-2022"),
-    endDate: new Date("01-08-2022"),
-    currentlyWorking: true,
+    startDate: new Date("05-01-2022"),
+    endDate: new Date("08-01-2022"),
     description: [
       "Implment a form generator with dynamic fields and validations based on insurance policy and user data for an insurance company using formik.",
 
@@ -51,9 +49,7 @@ export const experiences: IExperience[] = [
     locationType: "On-site",
     company: "D3-SG Pte Ltd",
     location: "Sg",
-    startDate: new Date("01-05-2022"),
-    endDate: new Date("01-08-2022"),
-    currentlyWorking: true,
+    startDate: new Date("05-01-2022"),
     pic: meta,
     description: [
       "Implment a form generator with dynamic fields and validations based on insurance policy and user data for an insurance company using formik.",
@@ -71,9 +67,7 @@ export const experiences: IExperience[] = [
     company: "D3-SG Pte Ltd",
     location: "Sg",
     startDate: new Date("01-05-2022"),
-    endDate: new Date("01-08-2022"),
     pic: tesla,
-    currentlyWorking: true,
     description: [
       "Implment a form generator with dynamic fields and validations based on insurance policy and user data for an insurance company using formik.",
 
