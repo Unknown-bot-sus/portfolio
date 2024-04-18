@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
   --line-color: #e5e7eb;
+
+  --text: #0e1807;
+  --background: #edf7e4;
+  --primary: #41671e;
+  --secondary: #79d7ad;
+  --accent: #3bc4a9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text: #eef8e7;
+    --background: #111b08;
+    --primary: #bbe198;
+    --secondary: #28865b;
+    --accent: #3bc4a9;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background: var(--background);
 }
 
 @layer utilities {
@@ -35,6 +35,6 @@ body {
 
 @layer components {
   .hero-head-text  {
-    @apply font-black text-white lg:text-7xl lg:leading-5 md:text-5xl sm:text-3xl text-xl  mt-10;
+    @apply font-black text-text lg:text-7xl lg:leading-5 md:text-5xl sm:text-3xl text-xl  mt-10;
   }
 }
