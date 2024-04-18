@@ -1,9 +1,14 @@
 import { ICertification, IEducation } from "../types";
+import { simLogo, uolLogo } from "./images";
 
 export const educations: IEducation[] = [
   {
     id: 1,
-    institution: "Goldsmiths, University of London",
+    institution: {
+      name: "Goldsmiths, University of London",
+      logo: uolLogo,
+      link: "https://www.gold.ac.uk/",
+    },
     degree: "Bachelor of Science",
     fieldOfStudy: "Computer Science",
     startDate: new Date("09-01-2022"),
@@ -11,7 +16,11 @@ export const educations: IEducation[] = [
   },
   {
     id: 2,
-    institution: "SIMGE (SIM Global Education)",
+    institution: {
+      name: "SIMGE (SIM Global Education)",
+      logo: simLogo,
+      link: "https://www.sim.edu.sg/",
+    },
     degree: "Diploma",
     fieldOfStudy: "Information Technology",
     startDate: new Date("03-01-2021"),
