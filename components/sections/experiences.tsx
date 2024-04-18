@@ -2,7 +2,7 @@
 
 import { IExperience } from "@/lib/constants/exps";
 import { FC } from "react";
-import { ExperienceCard } from "../experience-card";
+import { ExperienceCard } from "../cards/experience-card";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
