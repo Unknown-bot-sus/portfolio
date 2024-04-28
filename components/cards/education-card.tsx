@@ -15,7 +15,7 @@ export const EducationCard: FC<IEducation> = ({
   fieldOfStudy,
 }) => {
   return (
-    <div className="w-[35em] hover:scale-105 transition-transform ease-in-out flex bg-background-100 rounded-xl overflow-hidden mt-5">
+    <div className="  hover:scale-105 transition-transform ease-in-out flex bg-background-100 rounded-xl overflow-hidden mt-5">
       <Image src={institution.logo} alt={`${institution.name} logo`} />
       <div className="flex flex-col justify-around p-5">
         <span className="text-sm">{`${formatDate(startDate)}-${formatDate(
