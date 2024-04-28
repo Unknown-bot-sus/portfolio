@@ -5,18 +5,18 @@ import { Education } from "@/components/sections/education";
 import { Experiences } from "@/components/sections/experiences";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
-import { experiences } from "@/lib/constants";
+import { educations, experiences, certifications } from "@/lib/constants";
 import { Metadata } from "next";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main>
       <Nav />
       <Hero />
       <About />
       <Experiences experiences={experiences} />
       <Projects />
-      <Education />
+      <Education certifications={certifications} educations={educations} />
       <Contact />
     </main>
   );
