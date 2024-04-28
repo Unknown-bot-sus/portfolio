@@ -29,4 +29,23 @@ export const educations: IEducation[] = [
   },
 ];
 
-export const certifications: ICertification[] = [];
+export const certifications: ICertification[] = [
+  {
+    id: 1,
+    name: "AI4I® – Foundations in AI",
+    organization: "AI Singapore",
+    issueDate: new Date("04-01-2023"),
+    credentialId: "743739",
+    credentialUrl:
+      "https://learn.aisingapore.org/certificate-verification/815954DD93-156C2A8C1-12D555A8C/",
+  },
+  {
+    id: 2,
+    name: "AI FOR INDUSTRY® - Literacy In AI",
+    organization: "AI Singapore",
+    issueDate: new Date("11-01-2022"),
+    credentialId: "64684367",
+    credentialUrl:
+      "https://certified.aisingapore.org/2bbdd412-8aa8-4b52-88a4-525eabead057",
+  },
+];
