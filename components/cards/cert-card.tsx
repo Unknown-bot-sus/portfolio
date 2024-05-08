@@ -20,11 +20,11 @@ export const CertCard: FC<ICertification> = ({
     >
       <span>{name}</span>
       <span>{organization}</span>
-      <div>
+      <div className="text-xs">
         <span>Issued {formatDate(issueDate)}</span>
         {expireDate ? <span> - Expires {formatDate(expireDate)}</span> : null}
       </div>
-      <small>{credentialId}</small>
+      {credentialId ? <small className="text-xs">Credential Id: {credentialId}</small> : null}
     </Link>
   );
 };
