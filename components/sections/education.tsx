@@ -25,7 +25,7 @@ export const Education: FC<Props> = ({ certifications, educations }) => {
       </div>
       <div>
         <h3>Certificates</h3>
-        <div>
+        <div className="flex flex-wrap justify-around">
           {certifications.map((certs) => (
             <CertCard {...certs} key={certs.id} />
           ))}

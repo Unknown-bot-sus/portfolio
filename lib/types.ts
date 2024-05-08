@@ -21,7 +21,7 @@ export interface ICertification {
   name: string;
   organization: string;
   issueDate: Date;
-  expireDate: Date;
+  expireDate?: Date;
   credentialId: string;
   credentialUrl: string;
 }
