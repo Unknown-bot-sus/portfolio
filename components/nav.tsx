@@ -1,4 +1,4 @@
-import { Link } from "./ui/link";
+import { Link } from "./ui/Link";
 
 export const Nav = () => {
     const links = [
