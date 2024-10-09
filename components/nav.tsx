@@ -1,4 +1,4 @@
-import { Link } from "./ui/Link";
+import { Link } from "./ui/link";
 
 export const Nav = () => {
     const links = [
@@ -17,7 +17,7 @@ export const Nav = () => {
 
             <ul className="flex-1 flex justify-between gap-5">
                 {links.map(({ name, href }) => (
-                    <li><Link href={href} className="text-primary">{name}</Link></li>
+                    <li key={name}><Link href={href} className="text-primary">{name}</Link></li>
                 ))}
             </ul>
         </nav>
