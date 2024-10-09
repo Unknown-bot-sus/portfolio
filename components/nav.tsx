@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "./ui/Link";
 
 export const Nav = () => {
     const links = [
@@ -10,12 +10,14 @@ export const Nav = () => {
     ];
 
     return <header className="w-full">
-        <nav className="flex justify-between">
-            <Link className="flex-1" href="/">Thar Lin</Link>
+        <nav className="flex justify-between items-end">
+            <div className="flex-1">
+                <Link className="text-4xl" href="/">Thar Lin</Link>
+            </div>
 
             <ul className="flex-1 flex justify-between gap-5">
                 {links.map(({ name, href }) => (
-                    <li><Link href={href}>{name}</Link></li>
+                    <li><Link href={href} className="text-primary">{name}</Link></li>
                 ))}
             </ul>
         </nav>
