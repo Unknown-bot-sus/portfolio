@@ -1,4 +1,7 @@
+import { type ClassValue } from "clsx";
 import { StaticImageData } from "next/image";
+
+export type IClassName = ClassValue
 
 export interface IInstitution {
   name: string;
